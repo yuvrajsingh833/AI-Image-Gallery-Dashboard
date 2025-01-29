@@ -1,6 +1,5 @@
 import { Image } from "../types";
 
-// Helper function to generate random tags
 const getRandomTags = () => {
   const allTags = [
     "nature",
@@ -24,7 +23,7 @@ const getRandomTags = () => {
     "mystical",
     "urban",
   ];
-  const numTags = Math.floor(Math.random() * 3) + 2; // 2-4 tags per image
+  const numTags = Math.floor(Math.random() * 3) + 2; 
   const tags = [];
   for (let i = 0; i < numTags; i++) {
     const randomTag = allTags[Math.floor(Math.random() * allTags.length)];
@@ -35,19 +34,18 @@ const getRandomTags = () => {
   return tags;
 };
 
-// Helper function to get random AI model
+
 const getRandomAIModel = () => {
   const models = ["Stable Diffusion", "Midjourney", "DALL-E", "Leonardo AI"];
   return models[Math.floor(Math.random() * models.length)];
 };
 
-// Generate 100 unique images
+
 export const images: Image[] = Array.from({ length: 100 }, (_, i) => {
   const id = (i + 1).toString().padStart(3, "0");
   const width = 800;
   const height = 600;
 
-  // Use high-quality Unsplash images with consistent dimensions
   const imageUrls = [
     "https://images.unsplash.com/photo-1682686581030-7fa4ea2b96c3",
     "https://images.unsplash.com/photo-1682687982501-1e58ab814714",
@@ -55,7 +53,6 @@ export const images: Image[] = Array.from({ length: 100 }, (_, i) => {
     "https://images.unsplash.com/photo-1682695796954-bad0d0f59ff1",
   ];
 
-  // Generate a date within the last month
   const date = new Date();
   date.setDate(date.getDate() - Math.floor(Math.random() * 30));
 
