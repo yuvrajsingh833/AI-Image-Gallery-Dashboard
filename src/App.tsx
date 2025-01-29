@@ -18,7 +18,7 @@ function App() {
     currentPage: 1,
   });
 
-  // Apply filters to images
+  
   const filteredImages = useMemo(() => {
     return images.filter((image) => {
       const matchesSearch =
@@ -32,20 +32,17 @@ function App() {
     });
   }, [filters.search, filters.aiModel]);
 
-  // Calculate pagination
   const totalPages = Math.ceil(filteredImages.length / IMAGES_PER_PAGE);
   const paginatedImages = useMemo(() => {
     const startIndex = (filters.currentPage - 1) * IMAGES_PER_PAGE;
     return filteredImages.slice(startIndex, startIndex + IMAGES_PER_PAGE);
   }, [filteredImages, filters.currentPage]);
 
-  // Handle page change
   const handlePageChange = (page: number) => {
     setFilters((prev) => ({ ...prev, currentPage: page }));
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  // Toggle dark mode
   React.useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
