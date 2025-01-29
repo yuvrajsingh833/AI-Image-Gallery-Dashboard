@@ -52,8 +52,8 @@ A modern, responsive web application showcasing AI-generated artwork  with advan
 
 1. **Clone the repository**
    ```bash
-   git clone <[repository-url](https://github.com/yuvrajsingh833/AI-Image-Gallery-Dashboard)>
-   cd ai-gallery
+   git clone (https://github.com/yuvrajsingh833/AI-Image-Gallery-Dashboard)
+   cd Ai-Image-Gallery-Dashboard
    ```
 
 2. **Install dependencies**
