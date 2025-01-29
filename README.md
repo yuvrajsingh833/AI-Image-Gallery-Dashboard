@@ -104,8 +104,7 @@ src/
 ## 🚀 Deployment
 
 The application is deployed and can be accessed at:
-[https://ai-gallery-demo.netlify.app](https://ai-gallery-demo.netlify.app)
-
+[https://ai-image-gallery-dashboard.vercel.app](https://ai-image-gallery-dashboard.vercel.app)
 
 
 ## 📄 License
