@@ -52,7 +52,7 @@ A modern, responsive web application showcasing AI-generated artwork  with advan
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yuvrajsingh833/AI-Image-Gallery-Dashboard
+   git clone https://github.com/yuvrajsingh833/AI-Image-Gallery-Dashboard.git
    cd Ai-Image-Gallery-Dashboard
    ```
 
